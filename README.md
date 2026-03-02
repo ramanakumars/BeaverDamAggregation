@@ -76,7 +76,11 @@ cd PointTools/
 uv run panoptes_aggregation config ../workflows.csv 31207 -v 11.32
 ```
 
-As before, update the reducer 
+As before, update the reducer:
+
+```yaml
+TBD
+```
 
 ## Running the aggregation pipeline 
 
