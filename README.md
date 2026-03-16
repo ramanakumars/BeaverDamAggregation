@@ -11,6 +11,7 @@
 - [Running the aggregation pipeline](#running-the-aggregation-pipeline)
   - [Download the raw classifications](#download-the-raw-classifications)
   - [Extracting the data](#extracting-the-data)
+  - [Reducing the data](#reducing-the-data)
 
 ## Initial configuration
 
@@ -132,3 +133,14 @@ uv run panoptes_aggregation extract classifications.csv [path to Extractor_confi
 ```
 
 See the `plot points.ipynb` and `plot lines.ipynb` notebooks in the root folder for examples of what the extracted data looks like.
+
+### Reducing the data
+The data reduction is done using the `panoptes_aggregation reduce` command on the respective workflows. Once the extractions are done, in each folder,
+run:
+
+```bash
+uv run panoptes_aggregation reduce [path to _extractions.csv] [path to Reducer_config.yaml]
+```
+
+See the `plot points.ipynb` and `plot lines.ipynb` notebooks in the root folder for examples of what the extracted data looks like.
+
